@@ -1,0 +1,80 @@
+$font-family-sans-serif : 'Montserrat', sans-serif;
+$navbar-nav-link-padding-x: 1.5rem;
+$nav-pills-link-active-bg : #00661D;
+$primary : #00601b;
+$btn-font-size-lg: 1rem;
+$btn-font-size: 0.8rem;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "node_modules/animate.css/animate.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+.name {
+    color: aqua;
+    font-size: 60px;
+}
+
+.nav-link {
+    transition: transform 0.5s;
+}
+
+.nav-link.active {
+    color: white !important;
+}
+
+.nav-logo {
+    height: 40px;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-tran:hover .nav-logo {
+    transform: rotate(180deg);
+}
+
+.nav-tran:hover .nav-link.active {
+    transform: translateY(-5px);
+}
+
+//hero section
+
+.hero-section {
+    p {
+        color: gray;
+    }
+}
+
+// services
+
+.services {
+    text-align: center;
+    svg {
+        fill: $primary;
+    }
+}
+
+// Special
+
+.card-body {
+    .description {
+        font-size: 14px;
+    }
+}
+
+.custom-card {
+    transition: transform 0.5s ease-in-out;
+
+    img {
+        transition: transform 0.5s ease-in-out;
+    }
+
+    &:hover {
+        transform: translateY(-20px);
+        box-shadow: $box-shadow;
+    }
+
+    &:hover img {
+        transform: rotate(45deg);
+    }
+}
+
